@@ -119,13 +119,9 @@ Day1-Securitisation-Report
 
 ---
 
-## Sample Report Page
 
-<p align="center">
-<img src="images/report-page.png" width="700">
-</p>
 
----
+
 
 # 📥 Report
 
