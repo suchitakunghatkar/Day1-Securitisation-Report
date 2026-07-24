@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Field Mapping
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Data Field Mapping}
+
+Data field mapping connects business requirements with the available datasets. It identifies which fields are directly available and which Key Performance Indicators (KPIs) need to be calculated during data analysis and dashboard development.
+
+\vspace{0.4cm}
+
+\subsection*{Business Requirement Mapping}
+
+\renewcommand{\arraystretch}{1.4}
+
+\begin{tabularx}{\textwidth}{|p{4.5cm}|p{3.2cm}|X|}
+	\hline
+	\rowcolor{TableHeader}
+	\textbf{Business Requirement} & \textbf{Dataset} & \textbf{Field(s)}\\
+	\hline
+	
+	Total Loans
+	&
+	Auto Loan Pool
+	&
+	LoanID
+	\\
+	\hline
+	
+	Outstanding Balance
+	&
+	Auto Loan Pool
+	&
+	CurrentBalance
+	\\
+	\hline
+	
+	Original Loan Amount
+	&
+	Auto Loan Pool
+	&
+	OriginalLoanAmount
+	\\
+	\hline
+	
+	Interest Rate
+	&
+	Auto Loan Pool
+	&
+	InterestRate
+	\\
+	\hline
+	
+	Customer Credit Score
+	&
+	Auto Loan Pool
+	&
+	CIBILScore
+	\\
+	\hline
+	
+	Loan-to-Value Ratio
+	&
+	Auto Loan Pool
+	&
+	LTV
+	\\
+	\hline
+	
+	Days Past Due
+	&
+	DPD Snapshot
+	&
+	DPDDays
+	\\
+	\hline
+	
+	Default Status
+	&
+	DPD Snapshot
+	&
+	DelinquencyStatus
+	\\
+	\hline
+	
+	Vintage Analysis
+	&
+	Static Pool
+	&
+	VintageMonth
+	\\
+	\hline
+	
+	Recovery Amount
+	&
+	Dynamic Loss
+	&
+	RecoveryAmount
+	\\
+	\hline
+	
+	Net Loss
+	&
+	Dynamic Loss
+	&
+	NetLoss
+	\\
+	\hline
+	
+\end{tabularx}
+
+\vspace{0.7cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Fields Available vs Computed KPIs}
+
+\renewcommand{\arraystretch}{1.4}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+	\hline
+	\rowcolor{TableHeader}
+	\textbf{Available Fields} &
+	\textbf{KPIs to be Computed (Power BI / DAX)}
+	\\
+	\hline
+	
+	Loan Amount &
+	Total Portfolio Value
+	\\
+	\hline
+	
+	Current Balance &
+	Outstanding Portfolio
+	\\
+	\hline
+	
+	Interest Rate &
+	Average Interest Rate
+	\\
+	\hline
+	
+	CIBIL Score &
+	Average Credit Score
+	\\
+	\hline
+	
+	DPD Days &
+	30+, 60+, 90+ DPD Count
+	\\
+	\hline
+	
+	Recovery Amount &
+	Recovery Rate
+	\\
+	\hline
+	
+	Net Loss &
+	Loss Rate
+	\\
+	\hline
+	
+	Vintage Month &
+	Vintage Performance
+	\\
+	\hline
+	
+\end{tabularx}
+
+\vspace{0.7cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Expected Dashboard KPIs}
+
+\begin{tcolorbox}[colback=LightBlue,colframe=PrimaryBlue,title=Power BI Dashboard KPIs]
+	
+	\begin{itemize}
+		
+		\item Total Loans
+		
+		\item Total Portfolio Value
+		
+		\item Outstanding Balance
+		
+		\item Average Interest Rate
+		
+		\item Average Credit Score
+		
+		\item 30+, 60+, 90+ DPD Loans
+		
+		\item Default Rate
+		
+		\item Recovery Rate
+		
+		\item Net Loss
+		
+		\item Vintage Performance
+		
+	\end{itemize}
+	
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Data Analytics Workflow}
+
+\begin{center}
+	
+	\fbox{
+		
+		\begin{minipage}{0.94\textwidth}
+			
+			\centering
+			
+			CSV Datasets
+			
+			$\downarrow$
+			
+			Data Cleaning
+			
+			$\downarrow$
+			
+			Data Validation
+			
+			$\downarrow$
+			
+			Power BI Data Model
+			
+			$\downarrow$
+			
+			DAX Calculations
+			
+			$\downarrow$
+			
+			Interactive Dashboard
+			
+		\end{minipage}
+		
+	}
+	
+\end{center}
