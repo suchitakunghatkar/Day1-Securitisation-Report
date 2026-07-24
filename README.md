@@ -76,12 +76,11 @@ The report was prepared using **LaTeX** for professional documentation.
 
 
 
-## 📄 Cover Page
+# 📄 Cover Page
 
 <p align="center">
-  <img src="images/report-cover.jpg" width="700">
+  <img src="images/report-cover.jpeg" width="850">
 </p>
-
 
 
 ---
