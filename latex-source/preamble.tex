@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Font
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+% Page Layout
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Line spacing
+\usepackage{setspace}
+\setstretch{1.15}
+
+% Graphics
+\usepackage{graphicx}
+
+% Colors
+\usepackage{xcolor}
+
+\definecolor{PrimaryBlue}{HTML}{0B5394}
+\definecolor{LightBlue}{HTML}{D9EAF7}
+\definecolor{TableHeader}{HTML}{DCE6F1}
+
+% Tables
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+
+% Mathematics
+\usepackage{amsmath}
+
+% Hyperlinks
+\usepackage[
+colorlinks=true,
+linkcolor=PrimaryBlue,
+urlcolor=PrimaryBlue
+]{hyperref}
+
+% Headers and Footers
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\fancyhead[L]{\textbf{Day 1 Report}}
+
+\fancyhead[R]{India's Securitisation Landscape}
+
+\fancyfoot[C]{\thepage}
+
+% Better Section Titles
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\Large\bfseries\color{PrimaryBlue}}
+{\thesection}
+{1em}
+{}
+
+% Better Lists
+\usepackage{enumitem}
+
+% Nice Boxes
+\usepackage[most]{tcolorbox}
+
+% Flowcharts
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+% Better Captions
+\usepackage{caption}
+
+% No Paragraph Indent
+\setlength{\parindent}{0pt}
+
+% Space Between Paragraphs
+\setlength{\parskip}{6pt}
