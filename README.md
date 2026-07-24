@@ -123,11 +123,11 @@ Day1-Securitisation-Report
 
 
 
-# 📥 Report
+## 📄 Report
 
-You can read the complete report here:
+👉 **Download the complete report here:**
 
-📄 **Day1_Securitisation_Report.pdf**
+📥 [Day1_Securitisation_Report.pdf]
 
 ---
 
